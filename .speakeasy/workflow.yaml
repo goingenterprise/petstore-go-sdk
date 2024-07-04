@@ -1,0 +1,11 @@
+workflowVersion: 1.0.0
+sources:
+    petstore:
+        inputs:
+            - location: ../open-api-example/docs/petstore.yaml
+        registry:
+            location: registry.speakeasyapi.dev/mattboyle/mattboyle/petstore
+targets:
+    petstore-sdk:
+        target: go
+        source: petstore

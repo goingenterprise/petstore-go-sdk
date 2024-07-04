@@ -1,0 +1,27 @@
+speakeasyVersion: 1.326.2
+sources:
+    petstore:
+        sourceNamespace: petstore
+        sourceRevisionDigest: sha256:01c47fc04d55ead104d27dc73c0a1d5efaebfc9756d6c862eb18a114b6d6d77f
+        sourceBlobDigest: sha256:687b80e2e71384d765e2577cc162f9e938173cc0be9fbb8cbfcc45b2ba9bfb84
+        tags:
+            - latest
+targets:
+    petstore-sdk:
+        source: petstore
+        sourceNamespace: petstore
+        sourceRevisionDigest: sha256:01c47fc04d55ead104d27dc73c0a1d5efaebfc9756d6c862eb18a114b6d6d77f
+        sourceBlobDigest: sha256:687b80e2e71384d765e2577cc162f9e938173cc0be9fbb8cbfcc45b2ba9bfb84
+        outLocation: /Users/matthewboyle/Dev/petstore-sdk-go
+workflow:
+    workflowVersion: 1.0.0
+    sources:
+        petstore:
+            inputs:
+                - location: ../open-api-example/docs/petstore.yaml
+            registry:
+                location: registry.speakeasyapi.dev/mattboyle/mattboyle/petstore
+    targets:
+        petstore-sdk:
+            target: go
+            source: petstore

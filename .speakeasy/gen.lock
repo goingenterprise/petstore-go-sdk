@@ -1,0 +1,63 @@
+lockVersion: 2.0.0
+id: 314a8bbc-b2d1-47f7-baff-e0e97577a1be
+management:
+  docChecksum: 1bdb7a6f8bf3995d4b40475228403253
+  docVersion: 1.0.0
+  speakeasyVersion: 1.326.2
+  generationVersion: 2.359.1
+  releaseVersion: 0.0.1
+  configChecksum: 5da91e052be1eb316355a68625590e23
+features:
+  go:
+    additionalDependencies: 0.1.0
+    core: 3.4.14
+    devContainers: 2.90.0
+    flattening: 2.81.1
+    globalSecurityCallbacks: 0.1.0
+    globalServerURLs: 2.82.2
+    intellisenseMarkdownSupport: 0.1.0
+    responseFormat: 0.1.2
+    sdkHooks: 0.1.0
+generatedFiles:
+  - pets.go
+  - petstoresdk.go
+  - go.mod
+  - models/sdkerrors/sdkerror.go
+  - retry/config.go
+  - types/bigint.go
+  - types/date.go
+  - types/datetime.go
+  - types/decimal.go
+  - types/pointers.go
+  - internal/utils/contenttype.go
+  - internal/utils/form.go
+  - internal/utils/headers.go
+  - internal/utils/json.go
+  - internal/utils/pathparams.go
+  - internal/utils/queryparams.go
+  - internal/utils/requestbody.go
+  - internal/utils/retries.go
+  - internal/utils/security.go
+  - internal/utils/utils.go
+  - /models/operations/listpets.go
+  - /models/operations/createpets.go
+  - /models/operations/showpetbyid.go
+  - /models/components/error.go
+  - /models/components/pet.go
+  - /models/components/httpmetadata.go
+  - docs/models/operations/listpetsrequest.md
+  - docs/models/operations/listpetsresponse.md
+  - docs/models/operations/createpetsresponse.md
+  - docs/models/operations/showpetbyidrequest.md
+  - docs/models/operations/showpetbyidresponse.md
+  - docs/models/components/error.md
+  - docs/models/components/pet.md
+  - docs/models/components/httpmetadata.md
+  - docs/sdks/petstoresdk/README.md
+  - docs/sdks/pets/README.md
+  - USAGE.md
+  - .gitattributes
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - internal/hooks/hooks.go
